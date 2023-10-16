@@ -5,6 +5,6 @@ allowed_origins = ['https://irs-copilot.vercel.app/', 'https://irs-copilot.verce
 def register(app):
     @app.route('/')
     def health():
-        return jsonify({'status': 'ok', 'FIREBASE_CREDENTIALS': FIREBASE_CREDENTIALS})
+        return jsonify({'status': 'ok' })
 
     return app

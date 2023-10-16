@@ -2,6 +2,7 @@
     "name": "testing-flask2023",
     "license": "MIT",
     "scripts": {
-        "dev": "gunicorn --reload app:app"
+        "dev": "gunicorn --reload app:app",
+        "push": "git add . && git commit -m 'testing' && git push origin dev && git push heroku dev:master"
     }
 }
