@@ -1,1 +1,0 @@
-from services.openai import gpt3_completion
