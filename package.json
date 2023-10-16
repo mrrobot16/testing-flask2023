@@ -1,20 +1,8 @@
 {
-    "name": "irs-copilot-api",
+    "name": "testing-flask2023",
     "license": "MIT",
     "scripts": {
         "dev": "gunicorn --reload app:app",
-        "prod": "gunicorn --reload app:app",
-        "push": "git push origin dev",
-        "deploy": "git push heroku dev:master",
-        "logs":"heroku logs --tail",
-        "test": "yarn test:all",
-        "test:all": "yarn test:all:unit",
-        "test:all:unit": "yarn test:models:unit && yarn test:services:unit && yarn test:controllers:unit",
-        "test:models:unit": "pytest tests/unit/models",
-        "test:controllers:unit": "pytest tests/unit/controllers",
-        "test:services:unit": "pytest tests/unit/services",
-        "test:user": "pytest tests/unit/models/user && pytest tests/unit/services/user && pytest tests/unit/controllers/user",
-        "test:conversation": "pytest tests/unit/models/conversation && pytest tests/unit/services/conversation && pytest tests/unit/controllers/conversation",
-        "test:openai": "pytest tests/unit/models/openai && pytest tests/unit/services/openai && pytest tests/unit/controllers/openai"
+        "push": "git add . && git commit -m 'testing' && git push origin dev && git push heroku dev:master"
     }
 }

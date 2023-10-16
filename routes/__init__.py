@@ -1,4 +1,5 @@
 from flask import jsonify
+from config import FIREBASE_CREDENTIALS
 allowed_origins = ['https://irs-copilot.vercel.app/', 'https://irs-copilot.vercel.app', 'http://localhost:3000']
 
 def register(app):
